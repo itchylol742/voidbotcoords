@@ -12,6 +12,7 @@
 // ==/UserScript==
 
 //           IMPORTANT!!!!!!!!!! THE BOT WILL TARGET 777,777 BY DEFAULT UNLESS YOU CHANGE IT
+//           ALSO IMPORTANT. click the Raw button on top to install the script 
 //           see below. it is also marked IMPORTANT
 
 (function () {
