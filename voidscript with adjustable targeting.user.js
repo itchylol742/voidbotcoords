@@ -3,13 +3,16 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.3
 // @description  try to take over the world!
-// @author       Jared (jdf2.org)
+// @author       Jared (original), updated by itchylol742
 // @match        https://hot-potato.reddit.com/embed*
 // @updateURL    https://gist.githubusercontent.com/jdf221/60dbfbc1025291c950dd0108949d86ee/raw/TheVoid.user.js
 // @downloadURL  https://gist.githubusercontent.com/jdf221/60dbfbc1025291c950dd0108949d86ee/raw/TheVoid.user.js
 // @grant        GM_xmlhttpRequest
 // @connect      jdf2.org
 // ==/UserScript==
+
+//           IMPORTANT!!!!!!!!!! THE BOT WILL TARGET 777,777 BY DEFAULT UNLESS YOU CHANGE IT
+//           see below. it is also marked IMPORTANT
 
 (function () {
     "use strict";
@@ -35,7 +38,8 @@
                     newDiv.style.height = "30%";
                     newDiv.style.color = "black";
                     newDiv.style["z-index"] = "9999";
-                 //change 777, 777 to the coordinates you want to void. if the area is already voided it will try to void a nearby pixel
+    //IMPORTANT!!!!!!!!!!   change 777, 777 to the coordinates you want to void. if the area is already voided it will try to void a nearby pixel
+    //                     targeting also works with the right side of the board added on april 2. i have tested this -itchylol742
                 await spiralMatrix(777, 777, 1, Infinity, async (x, y) => {
                     console.log(x, y, placeApi.getPixel(x, y));
                     if (placeApi.getPixel(x, y) !== humanColorMap.black) {
