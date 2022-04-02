@@ -2,16 +2,23 @@
 OR
 greasemonkey for firefox https://addons.mozilla.org/en-CA/firefox/addon/greasemonkey/
 
-2. go here to install the bot script https://github.com/itchylol742/voidbotcoords/raw/main/voidscript%20with%20adjustable%20targeting.user.js
+2 (chrome) go here to install the bot script https://github.com/itchylol742/voidbotcoords/raw/main/voidscript%20with%20adjustable%20targeting.user.js
 
-3. go to tampermonkey settings through chrome://extensions/, click on tampermonkey details, scroll down and click on extension options
+3 (chrome). go to tampermonkey settings through chrome://extensions/, click on tampermonkey details, scroll down and click on extension options
 
-4. click on the name of the script "The Void Script" to edit it
+4 (chrome). click on the name of the script "The Void Script" to edit it
+
+2 and 3 (firefox). click on the greasemonkey icon on the top right, new user script
+
+4 (firefox) go here https://github.com/itchylol742/voidbotcoords/blob/main/voidscript%20with%20adjustable%20targeting.user.js
+and copy and paste it into the new script, then control s to save
 
 5. scroll down to where it says  
 await spiralMatrix(777, 777, 1, Infinity, async (x, y) => {
 
-and change 777, 777 to the coordinates you want to attack. if its already black, it will attack a nearby pixel
+and change 777, 777 to the coordinates you want to attack. if its already black, it will attack a nearby pixel.
+
+control s to save.
 
 6. go to place and click on the grid. there should be a box on the left that says The Void Bot is Running
 
