@@ -12,7 +12,6 @@
 // ==/UserScript==
 
 //           IMPORTANT!!!!!!!!!! THE BOT WILL TARGET 777,777 BY DEFAULT UNLESS YOU CHANGE IT
-//           ALSO IMPORTANT. click the Raw button on top to install the script 
 //           see below. it is also marked IMPORTANT
 
 (function () {
@@ -41,7 +40,9 @@
                     newDiv.style["z-index"] = "9999";
     //IMPORTANT!!!!!!!!!!   change 777, 777 to the coordinates you want to void. if the area is already voided it will try to void a nearby pixel
     //                     targeting also works with the right side of the board added on april 2. i have tested this -itchylol742
-                await spiralMatrix(777, 777, 1, Infinity, async (x, y) => {
+                var X_Coordinate = 777;
+                var Y_Coordintate = 777;
+                await spiralMatrix(X_Coordinate, Y_Coordintate, 1, Infinity, async (x, y) => {
                     console.log(x, y, placeApi.getPixel(x, y));
                     if (placeApi.getPixel(x, y) !== humanColorMap.black) {
                         console.log("setting", x, ",", y);
