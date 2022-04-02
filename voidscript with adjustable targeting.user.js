@@ -40,8 +40,8 @@
                     newDiv.style["z-index"] = "9999";
     //IMPORTANT!!!!!!!!!!   change 777, 777 to the coordinates you want to void. if the area is already voided it will try to void a nearby pixel
     //                     targeting also works with the right side of the board added on april 2. i have tested this -itchylol742
-                var X_Coordinate = 777;
-                var Y_Coordintate = 777;
+                var X_Coordinate = 1372;
+                var Y_Coordintate = 360;
                 await spiralMatrix(X_Coordinate, Y_Coordintate, 1, Infinity, async (x, y) => {
                     console.log(x, y, placeApi.getPixel(x, y));
                     if (placeApi.getPixel(x, y) !== humanColorMap.black) {
